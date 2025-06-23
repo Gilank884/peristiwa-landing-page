@@ -21,16 +21,22 @@ import {
 const OffersSection = () => {
   const isMobile = useIsMobile();
 
+  const safeMobileParagraphPhrase = mobileParagraphPhrase.filter(
+    (item): item is string => typeof item === 'string'
+  );
+  const safeDesktopParagraphPhrase = desktopParagraphPhrase.filter(
+    (item): item is string => typeof item === 'string'
+  );
+
   return (
     <Wrapper>
       <Inner>
         <Header>
           <MaskText phrases={desktopHeaderPhrases} tag="h1" />
-          {isMobile ? (
-            <MaskText s={mobileParagraphPhrase} tag="p" />
-          ) : (
-            <MaskText phrases={desktopParagraphPhrase} tag="p" />
-          )}
+          <MaskText
+            phrases={isMobile ? safeMobileParagraphPhrase : safeDesktopParagraphPhrase}
+            tag="p"
+          />
         </Header>
 
         {/* Baris 1: Kecil kiri - Besar kanan */}
