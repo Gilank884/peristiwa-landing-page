@@ -116,7 +116,6 @@ export const Name = styled.div`
 export const Avatar = styled.div`
   margin-left: auto;
 
-
   @media (max-width: 768px) {
     width: 2.5rem;
     height: 2.5rem;

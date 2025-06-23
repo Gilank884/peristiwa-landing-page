@@ -11,3 +11,7 @@ export { default as FAQ } from './UI/FAQ';
 export { default as Footer } from './UI/Footer';
 export { default as Preloader } from './UI/Preloader';
 export { default as MaskText } from './Common/MaskText';
+export { default as StaffSection } from './UI/StaffSection';
+export { default as AboutText } from './UI/AboutText';
+export { default as ServiceSection } from "./UI/ServiceSection";
+export { default as ServiceText } from './UI/ServiceText';

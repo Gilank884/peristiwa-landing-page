@@ -7,9 +7,9 @@ const GetStartedButton = ({ padding }: { padding: string }) => {
       style={{
         padding: padding,
       }}
-      href="/"
+      href="https://wa.me/6282332901726"
     >
-      Get Started
+      Contact Us
     </LinkTo>
   );
 };

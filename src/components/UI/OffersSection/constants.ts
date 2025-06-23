@@ -34,7 +34,7 @@ export const offers = [
   },
   {
     illustration: wealth_management,
-    title: 'Expert Team and Network',
+    title:'Expert Team and Network',
     details:
       'Our experienced planners and trusted vendor connections guarantee seamless coordination and high-quality results.',
   },

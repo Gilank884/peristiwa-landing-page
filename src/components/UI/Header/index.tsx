@@ -7,7 +7,6 @@ import {
   LogoContainer,
   Nav,
   CallToActions,
-  AbsoluteLinks,
   BurgerMenu,
 } from './styles';
 import ic_bars from '../../../../public/svgs/ic_bars.svg';
@@ -36,7 +35,7 @@ const Header = () => {
         </LogoContainer>
         <Nav className={isOpen ? 'active' : ''}>
           {links.map((link, i) => (
-            <AnimatedLink key={i} title={link.linkTo} />
+            <AnimatedLink key={i} title={link.linkTo} href={link.url} />
           ))}
         </Nav>
         <CallToActions className={isOpen ? 'active' : ''}>

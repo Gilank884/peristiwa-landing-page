@@ -1,5 +1,6 @@
 'use client';
 import { useState } from 'react';
+import Link from 'next/link';
 import { Div, Word, Span, AbsoluteContainer } from './styles';
 
 type AnimationProps = {
@@ -30,9 +31,7 @@ const titleAnimation = {
 };
 
 const letterAnimation = {
-  rest: {
-    y: 0,
-  },
+  rest: { y: 0 },
   hover: {
     y: -25,
     transition: {
@@ -44,9 +43,7 @@ const letterAnimation = {
 };
 
 const letterAnimationTwo = {
-  rest: {
-    y: 25,
-  },
+  rest: { y: 25 },
   hover: {
     y: 0,
     transition: {
@@ -57,26 +54,28 @@ const letterAnimationTwo = {
   },
 };
 
-const AnimatedLink = ({ title }: { title: string }) => {
+const AnimatedLink = ({ title, href }: { title: string; href: string }) => {
   const [isHovered, setIsHovered] = useState(false);
   return (
-    <Div
-      onMouseEnter={() => setIsHovered(true)}
-      onMouseLeave={() => setIsHovered(false)}
-    >
-      <AnimatedWord
-        title={title}
-        animations={letterAnimation}
-        isHovered={isHovered}
-      />
-      <AbsoluteContainer>
+    <Link href={href}>
+      <Div
+        onMouseEnter={() => setIsHovered(true)}
+        onMouseLeave={() => setIsHovered(false)}
+      >
         <AnimatedWord
           title={title}
-          animations={letterAnimationTwo}
+          animations={letterAnimation}
           isHovered={isHovered}
         />
-      </AbsoluteContainer>
-    </Div>
+        <AbsoluteContainer>
+          <AnimatedWord
+            title={title}
+            animations={letterAnimationTwo}
+            isHovered={isHovered}
+          />
+        </AbsoluteContainer>
+      </Div>
+    </Link>
   );
 };
 

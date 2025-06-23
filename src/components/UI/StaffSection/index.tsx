@@ -55,10 +55,10 @@ const JoinSection = () => {
               <UserInfo>
                 <Name>
                   <MaskText phrases={new Array(t.person)} tag="h3" />
-                  <MaskText phrases={new Array('Client Of PERISTIWA')} tag="p" />
+                  <MaskText phrases={new Array('Part Of PERISTIWA Team')} tag="p" />
                 </Name>
                 <Avatar>
-                  <Image src={t.avatar} alt="user avatar"/>
+                  <Image src={t.avatar} alt="user avatar" />
                 </Avatar>
               </UserInfo>
             </Testimonial>
