@@ -1,22 +1,22 @@
-import webservice from '../../../../public/images/webservice.png';
-import eventdocumentation from '../../../../public/images/eventdocumentation.png';
-import videophoto from '../../../../public/images/videophoto.png'
-import photoproduct from '../../../../public/images/photoproduct.png'
-import visualbrand from '../../../../public/images/visualbrand.png'
-import eventorganizer from '../../../../public/images/eventorganizer.png'
-// For desktop
+const webservice = '/images/webservice.png';
+const eventdocumentation = '/images/eventdocumentation.png';
+const videophoto = '/images/videophoto.png';
+const photoproduct = '/images/photoproduct.png';
+const visualbrand = '/images/visualbrand.png';
+const eventorganizer = '/images/eventorganizer.png';
+
 export const desktopHeaderPhrases = [
   'Decide what do you want',
   'With Peristiwa',
 ];
+
 export const desktopParagraphPhrase = [
   'PERISTIWA opens a world of event planning possibilities.',
   "From corporate gatherings to unforgettable celebrations, From corporate gatherings to unforgettable celebrations,",
 ];
 
-// For mobile
 export const mobileParagraphPhrase = [
-  'PERISTIWA opens a world of event planning possibilities.',,
+  'PERISTIWA opens a world of event planning possibilities.',
   "From corporate gatherings to unforgettable celebrations,",
   'From corporate gatherings to unforgettable celebrations.',
 ];
@@ -46,7 +46,7 @@ export const offers = [
     details:
       'A product photography service captures high-quality images of items for marketing or sales purposes.',
   },
-   {
+  {
     illustration: webservice,
     title: 'Web Development',
     details:
