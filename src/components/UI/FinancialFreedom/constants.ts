@@ -13,7 +13,7 @@ export const desktopBriefNotePhrase = [
   'Creative event',
   'design, and',
   'expert planning, all in',
-  'one place.',
+  'Every place.',
 ];
 
 // For mobile
@@ -26,9 +26,9 @@ export const mobileParagraphPhrase = [
 
 export const mobileBriefNotePhrase = [
   'Smart',
-  ' investments,',
+  ' incredible,',
   'secure',
-  ' payments,',
+  ' Creative,',
   'and expert',
   'guidance, all',
   'in one place.',
